@@ -1,4 +1,4 @@
-#define BELLS_T 300
+#define BELLS_T 150
 static const note_t BELLS_S[] = {
 	{C5, 1, 1},
 	{C5, 1, 1},
@@ -53,5 +53,5 @@ static const note_t BELLS_S[] = {
 	{G4, 1, 0},
 	{B4, 1, 0},
 	{A4, 1, 0},
-	{G4, 2, 1},
+	{G4, 3, 1},
 };

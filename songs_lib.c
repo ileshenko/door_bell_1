@@ -20,13 +20,14 @@ typedef struct {
 
 #include "songs/sng_bells.c"
 #include "songs/sng_happy_new_year.c"
-
+#include "songs/sng_gamma.c"
 
 #define SNG_ENTRY(name) [name] = {name##_T, sizeof(name##_S)/ sizeof(note_t), name##_S}
 
-static const song_ctx_t songs[2] = {
+static const song_ctx_t songs[] = {
 	SNG_ENTRY(BELLS),
-	SNG_ENTRY(HAPPY_NEW_YEAR)
+	SNG_ENTRY(HAPPY_NEW_YEAR),
+	SNG_ENTRY(GAMMA),
 };
 
 void play_song(song_t song)
@@ -41,4 +42,5 @@ void play_song(song_t song)
 		note++;
 	}
 	play(PAUSE, 1, 1);
+	player_set_tempo(0);
 }

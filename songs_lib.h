@@ -3,7 +3,8 @@
 
 typedef enum {
 	BELLS,
-	HAPPY_NEW_YEAR
+	HAPPY_NEW_YEAR,
+	GAMMA,
 } song_t;
 
 void play_song(song_t song);
