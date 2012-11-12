@@ -1,3 +1,7 @@
+/*
+ * player.c
+ *
+ */
 
 #include  <msp430g2553.h>
 #include "player.h"
@@ -5,6 +9,9 @@
 
 #define OUTPUT_PORT BIT6
 
+/* frequencies of tones,
+ * use tones_t for access according to tone names
+ */
 static const int tones[] = {
 	220, 233, 247,  262,  277,  294,  311,  330,  349,  370,  391,  415,
 	440, 466, 494,  523,  554,  587,  622,  659,  698,  740,  784,  831,
@@ -15,12 +22,12 @@ static const int tones[] = {
 void player_init(void)
 {
 	P1DIR |= OUTPUT_PORT;
-	P1SEL |= OUTPUT_PORT;					//Use as TA0.1	
-	
+	P1SEL |= OUTPUT_PORT;					//Use as TA0.1
+
 	TA0CTL = TASSEL_2 + ID_0 + MC_1;		//SMCLK/1 = 1 mHz, upmode
 	TA0CCTL1 = OUTMOD_4;					//TOGGLE
 	TA0CCR1 = 10;							//Any small enough value for toggling
-	
+
 	TA1CTL = TASSEL_2 + ID_3 + MC_1;		//SMCLK/8 = 125 kHz, up mode
 }
 
@@ -31,22 +38,22 @@ void player_set_tempo(int ms)
 
 void play(char tone, char length, char stop)
 {
-	
+
 	if (tone != PAUSE)
 	{
 		TA0CCR0 = 500000l/tones[tone];
-//		TA0CTL  &= ~MC_3;	// MC=00 - STOP mode 
-		TA0CTL  |= MC_1;  // MC=01 - UP mode
+		TA0R = TA0CCR0-2;
+		/* accume that both of MC bits are cleared */
+		TA0CTL  |= MC_1; // MC=01 - UP mode
 	}
 	else
-		TA0CTL  &= ~MC_3;	// MC=00 - STOP mode 
+		TA0CTL  &= ~MC_3; // MC=00 - STOP mode
 
 	timer_sleep_for(length*8-stop);
 
  	if (stop)
  	{
- 		TA0CTL  &= ~MC_3; // stop playing
+ 		TA0CTL &= ~MC_3; // stop playing
  		timer_sleep_for(stop);
  	}
 }
-

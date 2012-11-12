@@ -1,6 +1,6 @@
 #define HAPPY_NEW_YEAR_T 200
 
-static const note_t HAPPY_NEW_YEAR_S[] = {
+const note_t HAPPY_NEW_YEAR_S[] = {
 	{C5, 1, 0},
 	{DE5, 1, 0},
 	{C5, 1, 0},

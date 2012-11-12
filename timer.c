@@ -20,7 +20,6 @@ void timer_init(void)
 
 //DEBUG
 	P1DIR |= BIT0;
-
 }
 
 void timer_unit_set(int ms)
@@ -32,7 +31,6 @@ void timer_unit_set(int ms)
 	}
 	else
 		TA1CCTL0 &= ~CCIE;
-
 }
 
 static char delay_length;
@@ -40,17 +38,12 @@ static char delay_length;
 void timer_sleep_for(char units)
 {
 	delay_length = units;
-	
-//	TA1CCTL0 = CCIE;
-// 	TA1CCR0 = tempo3;
-	
  	_BIS_SR(LPM0_bits + GIE);
 }
 
 #pragma vector=TIMER1_A0_VECTOR
 __interrupt void timer1_isr(void)
 {
-//	TA0CCR0--;
 //DEBUG
 	P1OUT ^= BIT0;
 	if (!(--delay_length))

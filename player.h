@@ -1,12 +1,12 @@
 /* 
+ * player.h
  * play tone 
  * 
  * 
- * */
+ */
+
 #ifndef _PLAYER_H_
 #define _PLAYER_H_
-
-//#include "songs_lib.h"
 
 typedef enum {
 	A3, AB3, B3, C4, CD4, D4, DE4, E4, F4, FG4, G4, GA4,
@@ -18,6 +18,5 @@ typedef enum {
 void player_init(void);
 void player_set_tempo(int ms);
 void play(char tone, char length, char stop);
-
 
 #endif /*_PLAYER_H_*/

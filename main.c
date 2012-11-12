@@ -14,7 +14,6 @@
 #include "button.h"
 #include "timer.h"
 
-char main_btn;
 
 void main()
 {
@@ -25,13 +24,5 @@ void main()
 	button_init();
 
 	for (;;)
-	{
-		main_btn = 0;
-		button_arm_trigger();
-		_BIS_SR(LPM0_bits + GIE);
-		if (main_btn)
-//			play_song(BELLS);
-//			play_song(HAPPY_NEW_YEAR);
-			play_song(GAMMA);
-	}	
+		play_song(button_wait_for());
 }

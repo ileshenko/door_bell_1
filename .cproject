@@ -16,8 +16,8 @@
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
 				<configuration artifactExtension="out" artifactName="door_bell_1" buildProperties="" description="" id="com.ti.ccstudio.buildDefinitions.MSP430.Debug.1811546587" name="Debug" parent="com.ti.ccstudio.buildDefinitions.MSP430.Debug">
 					<folderInfo id="com.ti.ccstudio.buildDefinitions.MSP430.Debug.1811546587.765760262" name="/" resourcePath="">
-						<toolChain id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.DebugToolchain.658105888" name="TI Code Generation Tools" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.linkerDebug.1741216281">
-							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1590288841" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
+						<toolChain id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.DebugToolchain.1684611903" name="TI Build Tools" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.DebugToolchain" targetTool="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.linkerDebug.1414637174">
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS.1207565797" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_TAGS" valueType="stringList">
 								<listOptionValue builtIn="false" value="DEVICE_CONFIGURATION_ID=MSP430G2553"/>
 								<listOptionValue builtIn="false" value="DEVICE_ENDIANNESS=little"/>
 								<listOptionValue builtIn="false" value="OUTPUT_FORMAT=COFF"/>
@@ -26,67 +26,52 @@
 								<listOptionValue builtIn="false" value="RUNTIME_SUPPORT_LIBRARY=libc.a"/>
 								<listOptionValue builtIn="false" value="OUTPUT_TYPE=executable"/>
 							</option>
-							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.1224883777" name="Compiler version" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="3.3.3" valueType="string"/>
-							<targetPlatform id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.targetPlatformDebug.696465333" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.targetPlatformDebug"/>
-							<builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.builderDebug.1318985143" keepEnvironmentInBuildfile="false" name="GNU Make" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.builderDebug"/>
-							<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.compilerDebug.1887702904" name="MSP430 Compiler" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.compilerDebug">
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.DIAG_WARNING.1949982076" name="Treat diagnostic &lt;id&gt; as warning (--diag_warning, -pdsw)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.DIAG_WARNING" valueType="stringList">
-									<listOptionValue builtIn="false" value="225"/>
-								</option>
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.SILICON_VERSION.1458430871" name="Silicon version (--silicon_version, -v)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.SILICON_VERSION.msp" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.PRINTF_SUPPORT.38597485" name="Level of printf support required (--printf_support)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.PRINTF_SUPPORT" value="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.PRINTF_SUPPORT.minimal" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.DEFINE.808618258" name="Pre-define NAME (--define, -D)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.DEFINE" valueType="definedSymbols">
+							<option id="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION.325021610" superClass="com.ti.ccstudio.buildDefinitions.core.OPT_CODEGEN_VERSION" value="4.1.1" valueType="string"/>
+							<targetPlatform id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.targetPlatformDebug.1704863508" name="Platform" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.targetPlatformDebug"/>
+							<builder buildPath="${BuildDirectory}" id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.builderDebug.1326886985" name="GNU Make.Debug" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.builderDebug"/>
+							<tool id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.compilerDebug.1240023347" name="MSP430 Compiler" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.compilerDebug">
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.SILICON_VERSION.1963253766" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.SILICON_VERSION" value="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.SILICON_VERSION.msp" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.DEFINE.1390687175" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.DEFINE" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="__MSP430G2553__"/>
 								</option>
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.OPT_LEVEL.1208565664" name="Optimization level (--opt_level, -O)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.OPT_LEVEL" value="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.OPT_LEVEL.0" valueType="enumerated"/>
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.INCLUDE_PATH.475024518" name="Add dir to #include search path (--include_path, -I)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.INCLUDE_PATH" valueType="includePath">
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.PRINTF_SUPPORT.1477846893" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.PRINTF_SUPPORT" value="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.PRINTF_SUPPORT.minimal" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.DEBUGGING_MODEL.362872155" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.DEBUGGING_MODEL" value="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.DEBUGGING_MODEL.SYMDEBUG__DWARF" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.OPT_LEVEL.1635925182" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.OPT_LEVEL" value="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.OPT_LEVEL.0" valueType="enumerated"/>
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.GCC.1446383398" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.GCC" value="true" valueType="boolean"/>
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.INCLUDE_PATH.605791707" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.INCLUDE_PATH" valueType="includePath">
 									<listOptionValue builtIn="false" value="&quot;${CCS_BASE_ROOT}/msp430/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
 								</option>
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.GCC.879980488" name="Enable support for GCC extensions (--gcc)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.GCC" value="true" valueType="boolean"/>
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.DEBUGGING_MODEL.7611830" name="Debugging model" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.DEBUGGING_MODEL" value="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compilerID.DEBUGGING_MODEL.SYMDEBUG__DWARF" valueType="enumerated"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__C_SRCS.923378798" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__C_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__CPP_SRCS.61438591" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__CPP_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__ASM_SRCS.1126987446" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__ASM_SRCS"/>
-								<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__ASM2_SRCS.59925655" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__ASM2_SRCS"/>
-							</tool>
-							<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.linkerDebug.1741216281" name="MSP430 Linker" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.linkerDebug">
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.linkerID.HEAP_SIZE.424020823" name="Heap size for C/C++ dynamic memory allocation (--heap_size, -heap)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.linkerID.HEAP_SIZE" value="80" valueType="string"/>
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.linkerID.STACK_SIZE.664714150" name="Set C system stack size (--stack_size, -stack)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.linkerID.STACK_SIZE" value="80" valueType="string"/>
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.linkerID.OUTPUT_FILE.1128563402" name="Specify output file name (--output_file, -o)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.linkerID.OUTPUT_FILE" value="&quot;door_bell_1.out&quot;" valueType="string"/>
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.linkerID.MAP_FILE.2075281606" name="Input and output sections listed into &lt;file&gt; (--map_file, -m)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.linkerID.MAP_FILE" value="&quot;door_bell_1.map&quot;" valueType="string"/>
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.linkerID.LIBRARY.248505357" name="Include library file or command file as input (--library, -l)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.linkerID.LIBRARY" valueType="libs">
-									<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.DIAG_WARNING.2096540927" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.DIAG_WARNING" valueType="stringList">
+									<listOptionValue builtIn="false" value="225"/>
 								</option>
-								<option id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.linkerID.SEARCH_PATH.1959620798" name="Add &lt;dir&gt; to library search path (--search_path, -i)" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.linkerID.SEARCH_PATH" valueType="stringList">
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.ABI.1218718011" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.ABI" value="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compilerID.ABI.coffabi" valueType="enumerated"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compiler.inputType__C_SRCS.259420662" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compiler.inputType__C_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compiler.inputType__CPP_SRCS.2868750" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compiler.inputType__CPP_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compiler.inputType__ASM_SRCS.1716272636" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compiler.inputType__ASM_SRCS"/>
+								<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compiler.inputType__ASM2_SRCS.2130892261" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.compiler.inputType__ASM2_SRCS"/>
+							</tool>
+							<tool id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.linkerDebug.1414637174" name="MSP430 Linker" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.linkerDebug">
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.linkerID.HEAP_SIZE.484563930" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.linkerID.HEAP_SIZE" value="80" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.linkerID.STACK_SIZE.251177454" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.linkerID.STACK_SIZE" value="80" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.linkerID.OUTPUT_FILE.89604102" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.linkerID.OUTPUT_FILE" value="&quot;door_bell_1.out&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.linkerID.MAP_FILE.774681810" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.linkerID.MAP_FILE" value="&quot;door_bell_1.map&quot;" valueType="string"/>
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.linkerID.SEARCH_PATH.1722799798" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.linkerID.SEARCH_PATH" valueType="stringList">
 									<listOptionValue builtIn="false" value="&quot;${CCS_BASE_ROOT}/msp430/include&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/lib&quot;"/>
 									<listOptionValue builtIn="false" value="&quot;${CG_TOOL_ROOT}/include&quot;"/>
 								</option>
+								<option id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.linkerID.LIBRARY.129308907" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.linkerID.LIBRARY" valueType="libs">
+									<listOptionValue builtIn="false" value="&quot;libc.a&quot;"/>
+								</option>
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="com.ti.ccstudio.buildDefinitions.MSP430.Debug.1811546587./door_bell_1/sng_bells.c" name="sng_bells.c" rcbsApplicability="disable" resourcePath="songs/sng_bells.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.compilerDebug.1887702904./door_bell_1/sng_bells.c">
-						<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.compilerDebug.1887702904./door_bell_1/sng_bells.c" name="MSP430 Compiler" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.compilerDebug.1887702904">
-							<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__C_SRCS.31165940" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__C_SRCS"/>
-							<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__CPP_SRCS.561453897" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__CPP_SRCS"/>
-							<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__ASM_SRCS.877686031" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__ASM_SRCS"/>
-							<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__ASM2_SRCS.1223716080" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__ASM2_SRCS"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="com.ti.ccstudio.buildDefinitions.MSP430.Debug.1811546587./door_bell_1/sng_happy_new_year.c" name="sng_happy_new_year.c" rcbsApplicability="disable" resourcePath="songs/sng_happy_new_year.c" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.compilerDebug.1887702904./door_bell_1/sng_happy_new_year.c">
-						<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.compilerDebug.1887702904./door_bell_1/sng_happy_new_year.c" name="MSP430 Compiler" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.compilerDebug.1887702904">
-							<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__C_SRCS.1020256267" name="C Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__C_SRCS"/>
-							<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__CPP_SRCS.780416281" name="C++ Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__CPP_SRCS"/>
-							<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__ASM_SRCS.141897411" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__ASM_SRCS"/>
-							<inputType id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__ASM2_SRCS.1364383165" name="Assembly Sources" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.compiler.inputType__ASM2_SRCS"/>
-						</tool>
-					</fileInfo>
-					<fileInfo id="com.ti.ccstudio.buildDefinitions.MSP430.Debug.1811546587./door_bell_1/msp430g2553.cmd" name="msp430g2553.cmd" rcbsApplicability="disable" resourcePath="msp430g2553.cmd" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.linkerDebug.1741216281./door_bell_1/msp430g2553.cmd">
-						<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.linkerDebug.1741216281./door_bell_1/msp430g2553.cmd" name="MSP430 Linker" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.linkerDebug.1741216281"/>
+					<fileInfo id="com.ti.ccstudio.buildDefinitions.MSP430.Debug.1811546587.msp430g2553.cmd" name="msp430g2553.cmd" rcbsApplicability="disable" resourcePath="msp430g2553.cmd" toolsToInvoke="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.linkerDebug.1414637174.1570187999">
+						<tool id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.linkerDebug.1414637174.1570187999" name="MSP430 Linker" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.linkerDebug.1414637174"/>
 					</fileInfo>
 					<sourceEntries>
-						<entry excluding="songs/sng_gamma.c|msp430g2553.cmd|songs/sng_happy_new_year.c|songs/sng_bells.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="songs/sng_wals.c|songs/sng_lada.c|songs/sng_gamma.c|msp430g2553.cmd|songs/sng_happy_new_year.c|songs/sng_bells.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -155,7 +140,7 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="songs/sng_gamma.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="songs/sng_wals.c|songs/sng_lada.c|songs/sng_gamma.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>

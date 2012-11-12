@@ -1,5 +1,6 @@
 #define BELLS_T 150
-static const note_t BELLS_S[] = {
+
+const note_t BELLS_S[] = {
 	{C5, 1, 1},
 	{C5, 1, 1},
 	{C5, 1, 1},

@@ -8,8 +8,8 @@
 
 typedef struct {
 	char tone;
-	char length:7;
-	char stop:1;
+	char length:5;
+	char stop:3;
 } note_t;
 
 typedef struct {
@@ -21,6 +21,8 @@ typedef struct {
 #include "songs/sng_bells.c"
 #include "songs/sng_happy_new_year.c"
 #include "songs/sng_gamma.c"
+#include "songs/sng_lada.c"
+#include "songs/sng_wals.c"
 
 #define SNG_ENTRY(name) [name] = {name##_T, sizeof(name##_S)/ sizeof(note_t), name##_S}
 
@@ -28,6 +30,8 @@ static const song_ctx_t songs[] = {
 	SNG_ENTRY(BELLS),
 	SNG_ENTRY(HAPPY_NEW_YEAR),
 	SNG_ENTRY(GAMMA),
+	SNG_ENTRY(LADA),
+	SNG_ENTRY(WALSE),
 };
 
 void play_song(song_t song)
