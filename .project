@@ -80,11 +80,4 @@
 		<nature>com.ti.ccstudio.core.ccsNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>msp430g2553.cmd</name>
-			<type>1</type>
-			<location>C:/Program Files/Texas Instruments/ccsv4/msp430/include/msp430g2553.cmd</location>
-		</link>
-	</linkedResources>
 </projectDescription>

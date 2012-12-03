@@ -8,8 +8,8 @@
 
 typedef struct {
 	char tone;
-	char length:5;
-	char stop:3;
+	unsigned char length:5;
+	unsigned char stop:3;
 } note_t;
 
 typedef struct {
