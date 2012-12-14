@@ -11,6 +11,9 @@ typedef enum {
 	GAMMA,
 	LADA,
 	WALSE,
+	PUST_VSEGDA,
+	JINGLE_BELLS,
+	SUROK,
 } song_t;
 
 void play_song(song_t song);

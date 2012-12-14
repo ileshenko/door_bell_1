@@ -53,6 +53,7 @@ void play(char tone, char length, char stop)
 
  	if (stop)
  	{
+ 		P1OUT &= ~OUTPUT_PORT; // close output transistor in stand by mode
  		TA0CTL &= ~MC_3; // stop playing
  		timer_sleep_for(stop);
  	}
