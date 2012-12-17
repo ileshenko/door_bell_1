@@ -75,7 +75,7 @@
 						<tool id="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.linkerDebug.560021886.800537059" name="MSP430 Linker" superClass="com.ti.ccstudio.buildDefinitions.MSP430_4.1.exe.linkerDebug.560021886"/>
 					</fileInfo>
 					<sourceEntries>
-						<entry excluding="songs/surok.c|songs/jingle_bells.c|songs/pust_vsegda.c|lnk_msp430g2452.cmd|songs/sng_wals.c|songs/sng_lada.c|songs/sng_gamma.c|msp430g2553.cmd|songs/sng_happy_new_year.c|songs/sng_bells.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="songs/tumbalalayka.c|songs/yonatan.c|songs/kalinka.c|songs/toda.c|songs/surok.c|songs/jingle_bells.c|songs/pust_vsegda.c|lnk_msp430g2452.cmd|songs/sng_wals.c|songs/sng_lada.c|songs/sng_gamma.c|msp430g2553.cmd|songs/sng_happy_new_year.c|songs/sng_bells.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
@@ -147,7 +147,7 @@
 						<tool id="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.linkerRelease.1236972743.962543690" name="MSP430 Linker" superClass="com.ti.ccstudio.buildDefinitions.MSP430_3.3.exe.linkerRelease.1236972743"/>
 					</fileInfo>
 					<sourceEntries>
-						<entry excluding="songs/surok.c|songs/jingle_bells.c|songs/pust_vsegda.c|lnk_msp430g2452.cmd|songs/sng_wals.c|songs/sng_lada.c|songs/sng_gamma.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="songs/tumbalalayka.c|songs/yonatan.c|songs/kalinka.c|songs/toda.c|songs/surok.c|songs/jingle_bells.c|songs/pust_vsegda.c|lnk_msp430g2452.cmd|songs/sng_wals.c|songs/sng_lada.c|songs/sng_gamma.c" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 					</sourceEntries>
 				</configuration>
 			</storageModule>
