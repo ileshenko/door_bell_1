@@ -21,8 +21,12 @@ static const int tones[] = {
 
 void player_init(void)
 {
-	P1DIR |= OUTPUT_PORT;
-	P1SEL |= OUTPUT_PORT;					//Use as TA0.1
+	P2DIR |= OUTPUT_PORT;
+
+	P2SEL |= OUTPUT_PORT;					//Use as TA0.1
+	P2SEL2 &= ~OUTPUT_PORT;
+	P2SEL &= ~BIT7;
+	P2SEL2 &= ~BIT7;
 
 	TA0CTL = TASSEL_2 + ID_0 + MC_1;		//SMCLK/1 = 1 mHz, upmode
 	TA0CCTL1 = OUTMOD_4;					//TOGGLE

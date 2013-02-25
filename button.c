@@ -6,7 +6,7 @@
 #include "button.h"
 #include "timer.h"
 
-#define DOOR_BTN (BIT3)
+#define DOOR_BTN (BIT0)
 typedef struct {
 	song_t song;
 	char dot;
@@ -32,20 +32,22 @@ typedef enum {
 
 void button_init(void)
 {
-	P1OUT |= DOOR_BTN;
-	P1REN |= DOOR_BTN; 							// Poll UP resistor
+	P2DIR &= ~DOOR_BTN;
+//	P2OUT |= DOOR_BTN;
+//	P2REN |= DOOR_BTN; 							// Poll UP resistor
 }
 
 static void button_arm_trigger(void)
 {
-	P1IFG &= ~DOOR_BTN;                         // IFG cleared
-	P1IE |= DOOR_BTN;                           // interrupt enabled
-	P1IES |= DOOR_BTN;							// Hi/lo edge
+	P2IFG &= ~DOOR_BTN;                         // IFG cleared
+	P2IE |= DOOR_BTN;                           // interrupt enabled
+//	P2IES |= DOOR_BTN;							// Hi/lo edge
+	P2IES &= ~DOOR_BTN;							// lo/hi edge
 }
 
 static inline int button_status_get(void)
 {
-	return P1IN & DOOR_BTN;
+	return !(P2IN & DOOR_BTN);
 }
 
 /* Song select state machine */
@@ -160,10 +162,10 @@ song_t button_wait_for(void)
 //	return DFL;
 }
 
-//Port 1 interrupt service routine
-#pragma vector=PORT1_VECTOR
-__interrupt void Port_1(void)
+//Port 2 interrupt service routine
+#pragma vector=PORT2_VECTOR
+__interrupt void Port_2(void)
 {
-	P1IE &= ~DOOR_BTN;
+	P2IE &= ~DOOR_BTN;
 	_BIC_SR_IRQ(LPM0_bits);
 }
