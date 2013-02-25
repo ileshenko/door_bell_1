@@ -13,6 +13,7 @@
  * use tones_t for access according to tone names
  */
 static const int tones[] = {
+	100, 117, 124,  131,  139,  147,  156,  165,  175,  185,  196,  208,
 	220, 233, 247,  262,  277,  294,  311,  330,  349,  370,  391,  415,
 	440, 466, 494,  523,  554,  587,  622,  659,  698,  740,  784,  831,
 	880, 932, 988, 1046, 1109, 1175, 1244, 1318, 1397, 1480, 1568, 1661,
@@ -57,6 +58,7 @@ void play(char tone, char length, char stop)
 
  	if (stop)
  	{
+ 		P1OUT &= ~OUTPUT_PORT; // close output transistor in stand by mode
  		TA0CTL &= ~MC_3; // stop playing
  		timer_sleep_for(stop);
  	}

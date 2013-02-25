@@ -13,15 +13,19 @@ typedef struct {
 	char dash;
 } song_select_t;
 
-#define DFL BELLS
+#define DFL TUMBALALAYKA
 
 static song_select_t map[] = {
 		[0] = {DFL, 1, 2},
-		[1] = {HAPPY_NEW_YEAR, 3, 0}, // .
-		[2] = {GAMMA, 0, 0}, // -
-		[3] = {WALSE,4,0}, // . .
+		[1] = {YONATAN, 3, 8}, // .
+		[2] = {GAMMA, 0, 6}, // -
+		[3] = {WALSE,4,7}, // . .
 		[4] = {DFL,0,5}, // . . .
-		[5] = {LADA,0,0}, // . . . -
+		[5] = {KALINKA,0,0}, // . . . -
+		[6] = {PUST_VSEGDA, 0, 0}, // - -
+		[7] = {JINGLE_BELLS, 0, 0}, // . . -
+		[8] = {SUROK, 9, 0}, // . -
+		[9] = {TODA, 0, 0} // . - .
 };
 
 typedef enum {
@@ -112,7 +116,7 @@ static btn_sm_event_t btn_event(void)
 	if (!released)
 		return BTN_TIMEOUT;
 
-	return ticks < 200 ? BTN_DOT : BTN_DASH;
+	return ticks < 500 ? BTN_DOT : BTN_DASH;
 }
 
 /* returns true if the button is pressed */
