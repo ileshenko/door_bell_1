@@ -77,6 +77,7 @@ static inline song_t btn_sm_song_get(void)
 
 static void wait_for_btn_press(void)
 {
+	_DINT();
 	button_arm_trigger();
  	_BIS_SR(LPM0_bits + GIE);
 }

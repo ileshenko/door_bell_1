@@ -34,6 +34,14 @@ void player_init(void)
 
 void player_set_tempo(int ms)
 {
+	if (ms)
+		P1SEL |= OUTPUT_PORT;					//Use as TA0.1
+	else
+	{
+		P1SEL &= ~OUTPUT_PORT;					//Use as GPIO
+		P1OUT &= ~OUTPUT_PORT;					// close output transistor in stand by mode
+	}
+
 	timer_unit_set(ms/8);
 }
 
@@ -54,7 +62,6 @@ void play(char tone, char length, char stop)
 
  	if (stop)
  	{
- 		P1OUT &= ~OUTPUT_PORT; // close output transistor in stand by mode
  		TA0CTL &= ~MC_3; // stop playing
  		timer_sleep_for(stop);
  	}
