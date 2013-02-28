@@ -39,11 +39,11 @@ void player_init(void)
 void player_set_tempo(int ms)
 {
 	if (ms)
-		P1SEL |= OUTPUT_PORT;					//Use as TA0.1
+		P2SEL |= OUTPUT_PORT;					//Use as TA0.1
 	else
 	{
-		P1SEL &= ~OUTPUT_PORT;					//Use as GPIO
-		P1OUT &= ~OUTPUT_PORT;					// close output transistor in stand by mode
+		P2SEL &= ~OUTPUT_PORT;					//Use as GPIO
+		P2OUT &= ~OUTPUT_PORT;					// close output transistor in stand by mode
 	}
 
 	timer_unit_set(ms/8);
