@@ -56,7 +56,7 @@ void play(char tone, char length, char stop)
 	{
 		TA0CCR0 = 500000l/tones[tone];
 		TA0R = TA0CCR0-2;
-		/* accume that both of MC bits are cleared */
+		/* assume that both of MC bits are cleared */
 		TA0CTL  |= MC_1; // MC=01 - UP mode
 	}
 	else
