@@ -20,26 +20,28 @@ typedef struct {
 
 #include "songs/tumbalalayka.c"
 #include "songs/yonatan.c"
-#include "songs/sng_gamma.c"
+#include "songs/peter_n_wolf.c"
 #include "songs/kalinka.c"
-#include "songs/sng_wals.c"
+#include "songs/wals.c"
 #include "songs/pust_vsegda.c"
 #include "songs/jingle_bells.c"
 #include "songs/surok.c"
 #include "songs/toda.c"
+#include "songs/habanera.c"
 
-#define SNG_ENTRY(name) [name] = {name##_T, sizeof(name##_S)/ sizeof(note_t), name##_S}
+#define SNG_ENTRY(name) [name] = {name##_T, sizeof(name##_S)/sizeof(note_t), name##_S}
 
 static const song_ctx_t songs[] = {
 	SNG_ENTRY(TUMBALALAYKA),
 	SNG_ENTRY(YONATAN),
-	SNG_ENTRY(GAMMA),
+	SNG_ENTRY(PETER_N_WOLF),
 	SNG_ENTRY(KALINKA),
 	SNG_ENTRY(WALSE),
 	SNG_ENTRY(PUST_VSEGDA),
 	SNG_ENTRY(JINGLE_BELLS),
 	SNG_ENTRY(SUROK),
 	SNG_ENTRY(TODA),
+	SNG_ENTRY(HABANERA),
 };
 
 void play_song(song_t song)

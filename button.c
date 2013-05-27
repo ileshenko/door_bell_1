@@ -18,9 +18,9 @@ typedef struct {
 static song_select_t map[] = {
 		[0] = {DFL, 1, 2},
 		[1] = {YONATAN, 3, 8}, // .
-		[2] = {GAMMA, 0, 6}, // -
+		[2] = {PETER_N_WOLF, 0, 6}, // -
 		[3] = {WALSE,4,7}, // . .
-		[4] = {DFL,0,5}, // . . .
+		[4] = {HABANERA,0,5}, // . . .
 		[5] = {KALINKA,0,0}, // . . . -
 		[6] = {PUST_VSEGDA, 0, 0}, // - -
 		[7] = {JINGLE_BELLS, 0, 0}, // . . -

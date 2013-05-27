@@ -8,13 +8,14 @@
 typedef enum {
 	TUMBALALAYKA,
 	YONATAN,
-	GAMMA,
+	PETER_N_WOLF,
 	KALINKA,
 	WALSE,
 	PUST_VSEGDA,
 	JINGLE_BELLS,
 	SUROK,
 	TODA,
+	HABANERA,
 } song_t;
 
 void play_song(song_t song);
